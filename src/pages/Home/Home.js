@@ -7,6 +7,7 @@ import axios from 'axios'
 import './Home.css'
 import Single from './Single/Single'
 import { useLocation } from 'react-router-dom'
+import Footer from '../../components/Foot/Footer'
 const Home = () => {
   const {search} = useLocation([])
   const [posts, setPost] = useState([])
@@ -27,6 +28,7 @@ const Home = () => {
         <Posts  posts={posts}></Posts>
         <Sidebar></Sidebar>
       </div>
+      <Footer></Footer>
     </>
   )
 }

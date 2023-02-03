@@ -29,8 +29,7 @@ const SinglePost = () => {
       await axios.delete(`http://localhost:5000/api/posts/${post._id}`, {
         data: { username: user.username },
       })
-
-      setUpdate(false)
+      window.location.replace("/");
     } catch (error) {}
   }
   useEffect(() => {
